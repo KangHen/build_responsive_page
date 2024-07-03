@@ -1,0 +1,12 @@
+<div class="product">
+    <div class="image">
+        <img src="{{ product.image }}" alt="{{ product.image }}">
+    </div>
+    <p class="price">{{ product.price|currency: 'GBP' : 'symbol' }}</p>
+    <h2 class="title">
+        <span>{{ firstName }}</span>
+        {{ otherName }}
+    </h2>
+    <p class="size">Size {{ product.size }}</p>
+    <p class="rental">{{ product.rental|currency: 'GBP' : 'symbol' }} Rental</p>
+</div>

@@ -1,0 +1,40 @@
+nav {
+    height: 72px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.container {
+    padding: 0 64px;
+
+    .row {
+        gap: 0 16px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        
+        .col {
+            flex: 0 1 calc(20% - 16px);
+            margin-bottom: 48px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 0 72.5px;
+
+        .row {
+            gap: unset;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            
+            .col {
+                flex: 0 1 100%;
+            }
+        }
+    }
+}
